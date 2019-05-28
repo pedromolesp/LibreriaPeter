@@ -1,0 +1,59 @@
+{
+  "libros": [
+    {
+      "id": 1,
+      "titulo": "12 Reglas para vivir",
+      "autor": "Jordan B. Peterson",
+      "editorial": "Planeta",
+      "precio": 21.9,
+      "numPaginas": 507,
+      "isbn": "978-84-08-19330-2",
+      "tapaDura": true,
+      "disponible": true
+    },
+    {
+      "id": 3,
+      "titulo": "La sima del diablo",
+      "autor": "Heinz Delam",
+      "editorial": "Alfaguara (Serie Roja)",
+      "precio": 16.9,
+      "numPaginas": 343,
+      "isbn": "978-84-20-46564-7",
+      "tapaDura": true,
+      "disponible": true
+    },
+    {
+      "id": 4,
+      "titulo": "Angeles y demonios",
+      "autor": "Dan Brown",
+      "editorial": "Planeta",
+      "precio": 18.95,
+      "numPaginas": 688,
+      "isbn": "978-84-08-17600-8",
+      "tapaDura": true,
+      "disponible": true
+    },
+    {
+      "id": 5,
+      "titulo": "El gato negro",
+      "autor": "Edgar Allan Poe",
+      "editorial": "Libros Del Zorro Rojo",
+      "precio": 10.35,
+      "numPaginas": 121,
+      "isbn": "978-84-96-50995-5",
+      "tapaDura": true,
+      "disponible": true
+    },
+    {
+      "id": 6,
+      "titulo": "Rebelión en la granja",
+      "autor": "George Orwell",
+      "editorial": "DEBOLSILLO",
+      "precio": 7.75,
+      "numPaginas": 144,
+      "isbn": "978-84-99-89095-1",
+      "tapaDura": false,
+      "disponible": true
+    }
+  ]
+}

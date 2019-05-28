@@ -1,0 +1,35 @@
+<div class="contenedor" *ngIf="privateLesson">
+
+  <h2>{{libro.titulo}}</h2>
+  <table id="libros">
+    <thead>
+      <th>Id</th>
+      <th>ISBN</th>
+      <th>Título</th>
+      <th>Autor</th>
+      <th>Editorial</th>
+      <th>Precio</th>
+      <th>Número de páginas</th>
+      <th>Tapa dura</th>
+      <th>Disponible</th>
+      <th>Manipular</th>
+    </thead>
+    <tr>
+      <td>{{libro.id}}</td>
+      <td>{{libro.isbn}}</td>
+      <td >{{libro.titulo}}</td>
+      <td >{{libro.autor}}</td>
+      <td >{{libro.editorial}}</td>
+      <td >{{libro.precio}}</td>
+      <td >{{libro.numPaginas}}</td>
+      <td >{{libro.tapaDura}}</td>
+      <td >{{libro.disponible}}</td>
+      <td> <button (click)="eliminarLibro(libro.id)"> <img id="imagemanipular" [src]="eliminar" ></button>
+        <button [routerLink]= "['/editar-libro', libro.id]"> <img id="imagemanipular" [src]="editarimg" ></button></td>
+
+     
+
+    
+    </tr>
+  </table>
+</div>

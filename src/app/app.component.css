@@ -1,0 +1,37 @@
+a:link{
+    color: red;
+    font-family: Arial;
+    text-decoration: none;  
+}
+button:hover a{
+
+color: blueviolet;
+
+}
+.mat-toolbar{
+    background: rgb(240, 212, 56);
+    background-image: url("../assets/grid.png");
+}
+
+.mat-toolbar button{
+    background-color: rgb(240, 212, 56);
+    opacity: 50%;
+}
+.enlaces{
+    text-align: end;
+    display: inline-block;
+    
+    padding-left: 25%;
+    
+}
+.enlaces button{
+    margin-left: 30px;
+    border: 3px solid lightyellow;
+}
+.image-icon{
+    height: 120%;
+    width:80px;
+}
+#botonrotor{
+    outline: none;
+}

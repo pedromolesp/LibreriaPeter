@@ -1,0 +1,63 @@
+<div class="formularioizq">
+  <h2 class="titulo">Editar libro</h2>
+  <br/>
+  <form class="centrar" *ngIf="privateLesson">
+    <table>
+      <tr>
+        <td>
+          <mat-form-field>
+            <input matInput type="text" name="nombre" placeholder="Nombre" [(ngModel)]="libro.titulo"/>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field>
+            <input matInput type="text" name="precio" placeholder="Precio" [(ngModel)]="libro.precio"/>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field>
+            <input matInput type="text" name="autor" placeholder="Autor" [(ngModel)]="libro.autor"/>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field>
+            <input matInput type="number" name="numPaginas" placeholder="Numero de páginas" [(ngModel)]="libro.numPaginas"/>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field>
+            <input matInput type="text" name="editorial" placeholder="Editorial" [(ngModel)]="libro.editorial"/>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field>
+            <input matInput type="text" name="isbn" placeholder="Isbn" [(ngModel)]="libro.isbn"/>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-radio-group aria-label="Selecciona si está disponible">
+            <mat-radio-button type="radio" name="disponible1" [value]="true" [(ngModel)]="libro.disponible" ngDefaultControl>Disponible</mat-radio-button>
+            <mat-radio-button type="radio" name="disponible2" [value]="false" [(ngModel)]="libro.disponible" ngDefaultControl>No disponible</mat-radio-button>
+          </mat-radio-group>
+        </td>
+        <td>
+          <mat-radio-group aria-label="Selecciona si tiene tapa dura">
+            <mat-radio-button type="radio" name="tapaDura" [value]="true" [(ngModel)]="libro.tapaDura" ngDefaultControl>Con tapa dura</mat-radio-button>
+            <mat-radio-button type="radio" name="tapaDura" [value]="false" [(ngModel)]="libro.tapaDura" ngDefaultControl>Sin tapa dura</mat-radio-button>
+          </mat-radio-group>
+        </td>
+      </tr>
+    </table>
+   <br/> <br/>
+    <button (click)="editar()">Editar Libro</button>
+  </form>
+  <br/> <br/>
+
+</div>
+
