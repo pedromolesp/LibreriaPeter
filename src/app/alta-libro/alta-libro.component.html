@@ -42,14 +42,14 @@
       <tr>
         <td>
           <mat-radio-group aria-label="Selecciona si está disponible">
-            <mat-radio-button name="disponible" value="true" [(ngModel)]="disponible" ngDefaultControl>Disponible</mat-radio-button>
-            <mat-radio-button name="disponible" value="false" [(ngModel)]="disponible" ngDefaultControl>No disponible</mat-radio-button>
+            <mat-radio-button name="disponible" [value]="true" [(ngModel)]="disponible" ngDefaultControl>Disponible</mat-radio-button>
+            <mat-radio-button name="disponible" [value]="false" [(ngModel)]="disponible" ngDefaultControl>No disponible</mat-radio-button>
           </mat-radio-group>
         </td>
         <td>
           <mat-radio-group aria-label="Selecciona si tiene tapa dura">
-            <mat-radio-button name="tapaDura" value="true" [(ngModel)]="tapaDura" ngDefaultControl>Con tapa dura</mat-radio-button>
-            <mat-radio-button  name="tapaDura" value="false" [(ngModel)]="tapaDura" ngDefaultControl>Sin tapa dura</mat-radio-button>
+            <mat-radio-button name="tapaDura" [value]="true" [(ngModel)]="tapaDura" ngDefaultControl>Con tapa dura</mat-radio-button>
+            <mat-radio-button  name="tapaDura" [value]="false" [(ngModel)]="tapaDura" ngDefaultControl>Sin tapa dura</mat-radio-button>
           </mat-radio-group>
         </td>
       </tr>

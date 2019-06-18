@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./editar-libro.component.css']
 })
 export class EditarLibroComponent implements OnInit {
-
+  disponible: string;
   id: number;
   libro: Libro;
   privateLesson = false;
@@ -22,34 +22,27 @@ export class EditarLibroComponent implements OnInit {
 
 
   constructor(private catalogoApiService: CatalogoApiService, private router: Router, private route: ActivatedRoute, private http: Http) {
-  
+
   }
 
   ngOnInit() {
     let id = this.route.snapshot.paramMap.get('id');
-  
+
     this.catalogoApiService.getLibro(id).subscribe(
       (p) => {
         this.libro = p;
         this.privateLesson = true;
+        this.disponible = this.libro.disponible ? "true" : "false";
       }
     );
+    
 
   }
 
   editar() {
+    this.libro.disponible = this.disponible === 'true' ? true : false;
     this.catalogoApiService.actualizarLibro(this.libro).subscribe(
       () => {
-        if(this.libro.tapaDura.valueOf()){
-          this.libro.tapaDura = true;
-        }else{
-          this.libro.tapaDura = false;
-        }
-        if(this.libro.disponible === true){
-          this.libro.disponible = true;
-        }else{
-          this.libro.disponible = false;
-        }
         console.log('Se ha editado');
         this.router.navigateByUrl('/detalle/' + this.libro.id);
       },

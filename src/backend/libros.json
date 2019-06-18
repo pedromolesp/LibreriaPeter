@@ -9,7 +9,7 @@
       "numPaginas": 507,
       "isbn": "978-84-08-19330-2",
       "tapaDura": "on",
-      "disponible": "on"
+      "disponible": true
     },
     {
       "id": 3,
@@ -41,7 +41,7 @@
       "precio": 10.35,
       "numPaginas": 121,
       "isbn": "978-84-96-50995-5",
-      "tapaDura": true,
+      "tapaDura": "on",
       "disponible": true
     },
     {
@@ -65,6 +65,17 @@
       "tapaDura": "on",
       "disponible": "on",
       "id": 7
+    },
+    {
+      "titulo": "probando",
+      "autor": "probando",
+      "editorial": "probando ",
+      "precio": "45",
+      "numPaginas": 355,
+      "isbn": "8785-345-34534",
+      "tapaDura": "on",
+      "disponible": "on",
+      "id": 8
     }
   ]
 }

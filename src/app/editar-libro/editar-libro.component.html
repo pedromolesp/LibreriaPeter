@@ -41,9 +41,9 @@
       </tr>
       <tr>
         <td>
-          <mat-radio-group aria-label="Selecciona si está disponible">
-            <mat-radio-button type="radio" name="disponible1" [value]="true" [(ngModel)]="libro.disponible" ngDefaultControl>Disponible</mat-radio-button>
-            <mat-radio-button type="radio" name="disponible2" [value]="false" [(ngModel)]="libro.disponible" ngDefaultControl>No disponible</mat-radio-button>
+          <mat-radio-group aria-label="Selecciona si está disponible"  [(ngModel)]="disponible" >
+            <mat-radio-button type="radio" name="disponible" value="true" ngDefaultControl>Disponible</mat-radio-button>
+            <mat-radio-button type="radio" name="disponible" value="false" ngDefaultControl>No disponible</mat-radio-button>
           </mat-radio-group>
         </td>
         <td>
@@ -58,6 +58,7 @@
     <button (click)="editar()">Editar Libro</button>
   </form>
   <br/> <br/>
+  {{libro.disponible}}
 
 </div>
 
