@@ -36,7 +36,7 @@ export class ListaLibrosComponent implements OnInit {
 
   constructor(private catalogoApiService: CatalogoApiService, private route : Router) {
     //this.libro = catalogoApiService.getCatalogo();
-    this.libros = catalogoApiService.getCatalogo();
+    
 
     /*.subscribe(result => {
       console.log(result);
@@ -45,6 +45,7 @@ export class ListaLibrosComponent implements OnInit {
 
   }
   ngOnInit() {
+    this.libros = this.catalogoApiService.getCatalogo();
   }
   eliminarLibro(id: any) {
     this.catalogoApiService.deleteBook(id).subscribe(

@@ -11,7 +11,7 @@ import { Headers} from '@angular/http';
 })
 export class DetalleComponent implements OnInit {
 
-  id: number;
+  id: string;
   libro: Libro;
 
   eliminar = 'https://upload.wikimedia.org/wikipedia/commons/f/f6/White_X_in_red_background.png';
@@ -28,9 +28,9 @@ export class DetalleComponent implements OnInit {
   }
 
   ngOnInit() {
-    let id = this.route.snapshot.paramMap.get('id');
+    this.id = this.route.snapshot.paramMap.get('id');
   
-    this.catalogoApiService.getLibro(id).subscribe(
+    this.catalogoApiService.getLibro(this.id).subscribe(
       (p) => {
         this.libro = p;
         this.privateLesson = true;

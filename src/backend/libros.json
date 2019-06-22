@@ -5,7 +5,7 @@
       "titulo": "12 Reglas para vivir",
       "autor": "Jordan B. Peterson",
       "editorial": "Planeta",
-      "precio": 21.9,
+      "precio": "22",
       "numPaginas": 507,
       "isbn": "978-84-08-19330-2",
       "tapaDura": "on",
@@ -65,17 +65,6 @@
       "tapaDura": "on",
       "disponible": "on",
       "id": 7
-    },
-    {
-      "titulo": "probando",
-      "autor": "probando",
-      "editorial": "probando ",
-      "precio": "45",
-      "numPaginas": 355,
-      "isbn": "8785-345-34534",
-      "tapaDura": "on",
-      "disponible": "on",
-      "id": 8
     }
   ]
 }
